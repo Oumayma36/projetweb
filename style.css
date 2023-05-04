@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f2f2f2;
+}
+
+header {
+	background-color:hsla(235, 86%, 30%, 0.842);
+	color: white;
+	padding: -5px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	font-size: 35px;
+	line-height: 1.2;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom:5px;
+    margin-top: 5px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+.speakers {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.speaker {
+	flex: 0 0 300px;
+	margin: 20px;
+}
+
+.speaker img {
+	max-width: 100%;
+	height: auto;
+}
+
+.speaker h2 {
+	margin-top: 10px;
+}
+
+.registration-button {
+	display: inline-block;
+	background-color:hsla(235, 86%, 30%, 0.842);
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 20px;
+	transition: all 0.3s;
+}
+
+.registration-button:hover{
+	transform: translateX(10px);
+	background-color: var(--clr-accent);
+	color: var(--clr-light);
+}
+.slider{
+	width: 300px;
+	height: 200px;
+	background: url(imgs/1.jpg);
+	margin-left: 528px;
+	animation: slide 5s infinite;
+	background-size: cover;
+    background-position: center;
+}
+@keyframes slide{
+	25%{
+		background: url(imgs/1.jpg);
+		background-size: cover;
+        background-position: center;
+	}
+	50%{
+		background: url(imgs/2.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	75%{
+		background: url(imgs/3.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	100%{
+		background: url(imgs/4.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+}
+	
